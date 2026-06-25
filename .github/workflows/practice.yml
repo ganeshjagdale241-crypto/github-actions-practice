@@ -1,1 +1,15 @@
+#workflow should have name
+name: Hello
+#on tells when workflow will triggered
+on:
+  push:
+    branches: [main]
+#jobs tell 
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello to user
+        run: echo"Hello friends"
+  
 
